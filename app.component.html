@@ -1,0 +1,31 @@
+<!-- This is regular structural directive. -->
+
+<div class="container" *ngIf="isAvailable">
+  <p>This is the demo for creating Regular Structural Directive.</p>
+</div>
+<button class="btn btn-toggle" (click)="isAvailable = !isAvailable">
+  Toggle Condition
+</button>
+
+<!-- This is how structural directive works behind the scenes. -->
+
+<ng-template [ngIf]="isAvailable">
+  <div class="container">
+    <p>
+      This is how Regular Structural Directive works behind the scenes in
+      Angular.
+    </p>
+  </div>
+</ng-template>
+<button class="btn btn-toggle" (click)="isAvailable = !isAvailable">
+  Toggle Condition
+</button>
+
+<!-- This is custom structural directives. -->
+
+<div class="container" *appCustomIf="isAvailable">
+  <p>This is the demo for creating Custom Structural Directive.</p>
+</div>
+<button class="btn btn-toggle" (click)="isAvailable = !isAvailable">
+  Toggle Condition
+</button>

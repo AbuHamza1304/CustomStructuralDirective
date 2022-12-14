@@ -1,0 +1,26 @@
+.container {
+  background-color: gainsboro;
+  text-align: center;
+  margin: 20px 20px;
+  padding: 10px 20px;
+}
+
+p {
+  font-size: larger;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* word-spacing: 5px; */
+}
+
+.btn {
+  width: 10%;
+  padding: 5px 0px;
+  margin-left: 600px;
+  font-size: medium;
+}
+
+.btn-toggle:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
